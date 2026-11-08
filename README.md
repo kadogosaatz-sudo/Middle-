@@ -248,7 +248,7 @@ app.post('/login-step2', (req, res) => {
   let niProduction = process.env.NODE_ENV === 'production';
   res.cookie('session', 'scorpion-' + crypto.randomBytes(16).toString('hex'), { httpOnly: true, secure: niProduction, sameSite: 'strict', maxAge: 5 * 60 * 1000 });
   andikaRipoti(req.ip, 'LOGIN SAHIHI', `Username: ${username}`);
-  res.json({ msg: "Karibu SCORPION - MFA Imefaulu - LLF MY MOM" });
+  res.json({ msg: "Karibu SCORPION - MFA Imefaulu - " });
 });
 
 app.post('/logout', (req, res) => { res.clearCookie('session'); res.json({ msg: "Umetoka salama" }); });
@@ -299,7 +299,8 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`SCORPION V14 inasikiliza kwenye port ${PORT} - LLF MY MOM`));<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SCORPION</title>
 <style>body{background:#000;color:#0f0;font-family:monospace;padding:15px} .box{background:#111;padding:15px;margin:10px 0;border:1px solid #0f0} input,button{padding:10px;margin:5px;width:90%} button{background:#0f0;font-weight:bold}</style></head>
 <body>
-<h1>SCORPION V14 - LLF MY MOM</h1>
+<h1>SCORPION V14 - L
+</h1>
 <p>100 Ways To Defend Hacking - 100/100</p>
 <div class="box" style="background:#ffcc00;color:#000;font-weight:bold">Kama mtu kakutumia email "Tuma pesa kwenye account mpya" - USITUME. Piga simu supplier kwa namba unayoijua. Kila transaction inasubiri dakika 10 - Unaweza ku-CANCEL.</div>
 <div class="box"><h3>LOGIN - MFA</h3><input id="u" placeholder="Username"><input id="p" type="password" placeholder="Password 14+"><button onclick="login1()">Login Step 1 - Password</button><input id="otp" placeholder="OTP"><button onclick="login2()">Login Step 2 - OTP</button><p id="loginMsg"></p></div>
@@ -316,9 +317,9 @@ async function loadTraining(){ let r=await fetch('/training'); let d=await r.jso
 async function angaliaRipoti(){ let r=await fetch('/scorpion-report'); let d=await r.json(); document.getElementById('report').innerText=d.report; }
 setInterval(angaliaRipoti,5000); angaliaRipoti();
 </script></body></html># SCORPION V14 - 100 Ways To Defend Hacking
-**LLF MY MOM**
+***
 
-## Nini ni SCORPION?
+## 
 Mfumo wa kujilinda dhidi ya hacking - Umetengenezwa na Ethical Hacker wa Kitanzania.
 
 ## Features - 100/100
@@ -329,12 +330,4 @@ Mfumo wa kujilinda dhidi ya hacking - Umetengenezwa na Ethical Hacker wa Kitanza
 - Privacy 51-60: Data Masking, Geotagging OFF, Webcam cover, Mute Mic, Virtual Card
 - Backup 61-70: 3-2-1 Rule, Offline backup, Test backup, Serial numbers
 - Enterprise 71-100: Least Privilege, Segmentation, ISO 27001, Firewall, Pentest, Phishing Sim, EDR, ADX, SIEM, YubiKey, Vuln Disclosure, USB Control, SPF/DKIM/DMARC, Red/Blue, Report Cybercrime, Juice Jacking, Assume Breach
-- Extra: Port Guard, Silent Ban, Auto Report, Wire Fraud + Bank Fraud Money Guard, Cleanup
-
-## Jinsi ya Ku-run - Windows 11
-```bash
-# Njia rahisi: Double-click start.bat
-# Au kwenye cmd:
-npm install
-node server.js
-# Fungua http://localhost:3000
+- Extra: Port Guard, Silent Ban, Auto Report, Wire Fraud + Bank Fraud Money Guard, 
